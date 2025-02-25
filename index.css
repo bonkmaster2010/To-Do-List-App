@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+input, button {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff9800; /* Orange color when focused */
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5722; /* Darker orange on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+li {
+    background-color: #2c2c2c; /* Dark background for each task */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #f0f0f0;
+    position: relative;
+}
+
+li:hover {
+    background-color: #3c3c3c; /* Slight color change when hovering over task */
+}
+
+li button {
+    background-color: #f44336; /* Red color for delete button */
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 10px; /* Positioned on the right side of the task */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+li button:focus {
+    outline: none; /* Remove the outline when focused */
+}
+
+li span {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long task names */
+    white-space: nowrap;
+}
