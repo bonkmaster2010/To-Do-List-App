@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #121212; /* Dark background */
-    color: #f0f0f0; /* Light text color */
+    background-color: #121212;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #ff9800; /* Orange color when focused */
+    border-color: #ff9800; 
 }
 
 button {
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff5722; /* Darker orange on hover */
+    background-color: #ff5722;
 }
 
 ul {
@@ -61,7 +61,7 @@ ul {
 }
 
 li {
-    background-color: #2c2c2c; /* Dark background for each task */
+    background-color: #2c2c2c; 
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
@@ -74,11 +74,11 @@ li {
 }
 
 li:hover {
-    background-color: #3c3c3c; /* Slight color change when hovering over task */
+    background-color: #3c3c3c; 
 }
 
 li button {
-    background-color: #f44336; /* Red color for delete button */
+    background-color: #f44336; 
     border: none;
     color: #fff;
     padding: 5px 10px;
@@ -86,23 +86,68 @@ li button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    position: absolute;
-    right: 10px; /* Positioned on the right side of the task */
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 li button:hover {
-    background-color: #d32f2f; /* Darker red on hover */
+    background-color: #d32f2f; 
 }
 
 li button:focus {
-    outline: none; /* Remove the outline when focused */
+    outline: none; 
 }
 
 li span {
     max-width: 80%;
     overflow: hidden;
-    text-overflow: ellipsis; /* Truncate long task names */
+    text-overflow: ellipsis; 
     white-space: nowrap;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.done-btn {
+    background-color: goldenrod;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #f4364f;
+}
+
+.done-btn, .delete-btn {
+
+    width: 130px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.done-btn:hover {
+    background-color: rgb(190, 147, 38);
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 10px;
 }
