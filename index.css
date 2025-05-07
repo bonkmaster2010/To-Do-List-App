@@ -21,7 +21,7 @@ input, button {
 }
 
 input {
-    width: 80%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -38,7 +38,7 @@ input:focus {
 }
 
 button {
-    width: 80%;
+    width: 50%;
     padding: 10px;
     background-color: #ff9800;
     border: none;
